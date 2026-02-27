@@ -1,0 +1,5 @@
+total_working_days=160
+student_attended_days=90
+attendance_percentage=student_attended_days/total_working_days*100
+print(attendance_percentage)
+

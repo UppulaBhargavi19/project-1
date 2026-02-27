@@ -1,0 +1,9 @@
+biryani_cost=360
+qty=3
+bill_amount=biryani_cost*qty
+print(bill_amount)
+sgst=2.5/100*bill_amount
+cgst=2.5/100*bill_amount
+final_bill_amount=bill_amount+sgst+cgst
+print(final_bill_amount)
+print(sgst+cgst)
