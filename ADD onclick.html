@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function AddTonumbers() {
+        //read the dollar
+        let number1 = parseFloat(document.getElementById("number").value);
+        let number2 = parseFloat(document.getElementById("number1").value);
+
+        if (isNaN(number1) || isNaN(number2)) {
+        document.getElementById("add").value = "";
+        return;
+      }
+
+
+        let add=number1+number2;
+        //print the data
+        document.getElementById("add").value = add;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>add two numbers....</h1>
+    <label>Enter the number1 :</label>
+    <input type="number" id="number" oninput="AddTonumbers()" />
+    <br /><br />
+    <label>enter the number2:</label>
+    <input type="number" id="number1" />
+    <br><br>
+    <button onclick="AddTonumbers()">Add</button>
+    <br><br>
+    <label>Result:</label>
+    <input type="number" id="add" readonly/>
+    
+  </body>
+</html>

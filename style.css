@@ -1,0 +1,127 @@
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    font-family: timesnewroman;
+}
+
+/* Group Selector */
+h1, h3{
+    color: red;
+    text-align: center;
+}
+h2{
+    color:yellow;
+}
+
+/* Descendant Selector */
+.course p{
+    color: green;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Additional styling */
+.course{
+    border:1px solid gray;
+    padding:15px;
+    margin:20px;
+    background-color:#f2f2f2;
+}
+
+footer p{
+    text-align:center;
+    color:darkblue;
+}
+/* 1. Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    font-family:timenewroman;
+}
+
+/* 2. Element Selector */
+p{
+    color: green;
+    font-size:18px;
+}
+
+/* 3. Class Selector */
+.myclass1{
+    border:2px solid gray;
+    padding:15px;
+    margin:15px;
+    background-color:gray;
+}
+
+/* 4. ID Selector */
+#title{
+    text-align:center;
+    color:darkblue;
+}
+
+/* 5. Group Selector */
+h1, h2{
+    font-family:Verdana;
+}
+
+/* 6. Descendant Selector */
+.course p{
+    color:red;
+}
+
+/* extra style */
+.btn{
+    background-color:blue;
+    color:white;
+   
+    padding:10px;
+}
+
+
+
+
+p{
+    color:blue !important;
+}
+.myid{
+    background-color:"red" !important
+}
+
+
+
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Element Selector */
+p{
+    color: blue;
+    font-size:18px;
+}
+
+/* Class Selector */
+.info{
+    color: green;
+    font-style: italic;
+}
+
+/* ID Selector */
+#mainTitle{
+    color: red;
+    text-align: center;
+}
+
+/* Group Selector */
+h2, h3{
+    background-color: lightyellow;
+    color: purple;
+}
+
+/* Descendent Selector */
+.container p{
+    color: orange;
+    font-weight: bold;
+}

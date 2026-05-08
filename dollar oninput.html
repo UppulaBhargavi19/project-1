@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function dollarToInrConversion() {
+        //read the dollar
+        let dollar = document.getElementById("dollar").value;
+
+        // convert the dollar to INR
+        let inrRupees = parseFloat(dollar) * 83.2;
+
+        //print the data
+        document.getElementById("inr").value = inrRupees;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Dollar to INR conversion....</h1>
+    <label>Enter the Dollar:</label>
+    <input type="number" id="dollar" oninput="dollarToInrConversion()" />
+    <br /><br />
+    <label>INR Value:</label>
+    <input type="number" id="inr" name="inr" />
+    
+  </body>
+</html>

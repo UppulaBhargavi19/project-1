@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleMouseOver(){
+            document.getElementById("display").innerHTML="The mouse cursor on the image";
+        }
+        function handleMouseOut(){
+            document.getElementById("display").innerHTML="The mouse cusor out of the image";
+        }
+    </script>
+</head>
+<body>
+    <h2>MouseOver and MouseOut Example</h2>
+    <img src="/images/author.png"  onmouseover="handleMouseOver()" 
+                                   onmouseout="handleMouseOut()">
+    <p id="display"></p>
+</body>
+</html>

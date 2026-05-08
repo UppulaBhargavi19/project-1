@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Validation</title>
+
+    <script>
+        // Assume this is the stored old password
+        let storedPassword = "admin123";
+
+        function checkOldPassword() {
+            let oldPass = document.getElementById("oldpass").value;
+
+            if (oldPass === storedPassword) {
+                document.getElementById("msg1").innerHTML = "Old password is correct";
+            } else {
+                document.getElementById("msg1").innerHTML = "Old password is incorrect";
+            }
+        }
+
+        function validateNewPassword() {
+            let newPass = document.getElementById("newpass").value;
+
+            if (newPass.length < 6) {
+                document.getElementById("msg2").innerHTML = "Password must be at least 6 characters";
+            } else {
+                document.getElementById("msg2").innerHTML = "New password is valid";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Password Validation (onblur)</h2>
+
+    <label>Old Password:</label>
+    <input type="password" id="oldpass" onblur="checkOldPassword()">
+    <p id="msg1" style="color: blue;"></p>
+
+    <br>
+
+    <label>New Password:</label>
+    <input type="password" id="newpass" onblur="validateNewPassword()">
+    <p id="msg2" style="color: brown;"></p>
+
+</body>
+</html>

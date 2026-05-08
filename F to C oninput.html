@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function FahrenheitToCelsiusConversion() {
+        //read the dollar
+        let Fahrenheit  = document.getElementById("F").value;
+
+        // convert the dollar to INR
+        let Celsius = (5/9)*(Fahrenheit-32);
+
+        //print the data
+        document.getElementById("C").value = Celsius;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Fahrenheit to Celsius conversion....</h1>
+    <label>Enter the Fahrenheit :</label>
+    <input type="number" id="F" oninput="FahrenheitToCelsiusConversion()" />
+    <br /><br />
+    <label>Celsius Value:</label>
+    <input type="number" id="C" name="C"/>
+    
+  </body>
+</html>

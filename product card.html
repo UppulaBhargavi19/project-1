@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-card{
+            background-color: aqua;
+            border: 5px solid gray;
+            border-radius: 50px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            height: auto;
+            width: 200px;
+            /*transition: transform 0.9s linear;*/
+            /*transform: scale(1.05);*/
+            /*transform: scale(1.05,2.05);*/
+            transform: translate(20px, 20px);
+            /*transform: rotate(45deg);*/
+            /*transition: linear;*/
+            transition: transform 0.9s ease;
+
+        }
+        .product-card img{
+            border: 1px  solid red;
+            border-radius: 100PX;
+            width: 100%;
+            height: auto;
+            /*object-fit: cover;*/
+            object-fit: contain;
+            /*object-fit: fill;*/
+            /*object-fit: none;*/
+        }
+        .product-card h4{
+            color: green;
+            text-transform: capitalize;
+            font-size:larger;
+            font-weight: 500;
+            font-style:normal;
+        }
+        .product-card p{
+            font-style: italic;
+            color: red;
+        }
+        .product-card pre{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+        .product-card button:hover{
+            color: blue;
+
+        }
+        .product-card:hover{
+            transform: scale(1.1);
+            transition:transform 0.8s;
+        }
+        .container{
+            border-radius: 1px;
+            border-color: blue;
+            border: 3px solid pink;
+            flex-wrap: wrap;
+            display: flex;
+            /*flex-wrap: wrap;*//
+            gap: 10px;
+            flex-direction: row;
+            /*flex-direction: column-reverse;*/
+            /*justify-content: flex-start;*/
+            /*justify-content: center;*/
+            /*justify-content: flex-end;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-around;*/
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="product-card">
+        <img src= "images/tomato.png" alt="tomato">
+        <h3>NAME:Tomato</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/cucumber.png" alt="cucumber">
+        <h3>NAME:Cucumber</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/beans.png" alt="beans">
+        <h3>NAME:Beans</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/beetroot.png" alt="beetroot">
+        <h3>NAME:Beetroot</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/bitter gaurd.png" alt="bitter gaurd">
+        <h3>NAME:Bitter gaurd</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/bottle gaurd.png" alt="bottle gaurd">
+        <h3>NAME:Bottle gaurd</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/brinjal.png" alt="brinjal">
+        <h3>NAME:Brinjal</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/carrot.png" alt="carrot">
+        <h3>NAME:Carrot</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/ginger.png" alt="ginger">
+        <h3>NAME:Ginger</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/ivi gaurd.png" alt="ivi gaurd">
+        <h3>NAME:Ivi gaurd</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/ladyfinger.png" alt="ladyfinger">
+        <h3>NAME:Lady's finger</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src= "images/onions.png" alt="onions">
+        <h3>NAME:Onions</h3>
+        <p>rich in fiber</p>
+        <pre>$122</pre>
+        <button>Add to cart</button>
+    </div>
+    </div>
+</body>
+</html>
